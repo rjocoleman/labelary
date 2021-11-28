@@ -1,7 +1,7 @@
 module Labelary
   class Label
-    def self.render(*args)
-      self.new(*args).render
+    def self.render(**args)
+      self.new(**args).render
     end
 
     def initialize(dpmm: nil, width: nil, height: nil, index: nil, zpl:, content_type: nil, font: nil)

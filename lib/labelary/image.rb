@@ -1,7 +1,7 @@
 module Labelary
   class Image
-    def self.encode(*args)
-      self.new(*args).encode
+    def self.encode(**args)
+      self.new(**args).encode
     end
 
     def initialize(path:nil, mime_type:, filename:nil, file_io:nil)
