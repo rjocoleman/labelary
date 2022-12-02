@@ -1,5 +1,7 @@
+require 'active_support'
+
 require 'faraday'
-require 'faraday_middleware'
+require 'faraday/multipart'
 
 require 'labelary/label'
 require 'labelary/image'
