@@ -29,7 +29,7 @@ module Labelary
       @dpmm         = nil
       @width        = nil
       @height       = nil
-      @index        = 0
+      @index        = ''
       @content_type = 'image/png'
       @font         = ''
     end
