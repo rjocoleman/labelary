@@ -14,6 +14,7 @@ module Labelary
   class Configuration
     attr_accessor *[
       :url,
+      :api_key,
       :http_adapter,
       :dpmm,
       :width,
@@ -26,6 +27,7 @@ module Labelary
     def initialize
       @url          = 'http://api.labelary.com'
       @http_adapter = Faraday.default_adapter
+      @api_key      = nil
       @dpmm         = nil
       @width        = nil
       @height       = nil
