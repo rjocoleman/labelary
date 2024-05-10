@@ -8,6 +8,7 @@ module Labelary
       @connection ||= Faraday.new(url: config.url) do |faraday|
         faraday.request :multipart
         faraday.response :json, content_type: /\bjson$/
+        faraday.headers['X-API-Key'] = config.api_key if config.api_key
 
         faraday.adapter config.http_adapter
       end

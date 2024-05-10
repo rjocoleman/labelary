@@ -45,6 +45,7 @@ Labelary.configure do |config|
   config.index = 0 # optional, for picking a label when multiple are present in the ZPL (usually 0)
   config.content_type = 'image/png' # or 'application/pdf', specifies the content type of the returned label
   config.url = 'http://api.labelary.com' # optional (for self hosted)
+  config.api_key = 'api_key' # optional (for Labelary Business Saas, requires url to be set for the Paid API endpoint)
 end
 ```
 
